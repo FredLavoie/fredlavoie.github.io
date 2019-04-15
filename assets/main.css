@@ -45,7 +45,7 @@ q:before, q:after {
 
 
 /* start of my CSS styling for index.html */
-html { background-color: #e6edff; }
+body { background-color: #f2f2f2; }
 body { margin: 60px auto; width: 70%; }
 
 nav ul { font-size: 1em; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; padding: 0px; list-style: none; }
