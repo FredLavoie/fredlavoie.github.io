@@ -43,23 +43,64 @@ q:before, q:after {
 	content: none;
 }
 
+/* start of my CSS styling for website */
+body { 
+	background-color: #f2f2f2;
+	margin: 60px auto;
+	width: 80%;
+}
+
+nav ul { 
+	font-size: 1.1em;
+	font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+	padding: 0px;
+	list-style: none;
+	display: inline;
+	margin-right: 40px;
+	word-spacing: 8px;
+}
+
+#horzBar {
+	border-top: 1px solid #404040;
+	width: 70%;
+}
+
+a {
+	text-decoration: none;
+	color: #404040;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+h1, h2 { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; }
+h1 { font-size: 3em; }
+h2 { font-size: 1.3em; }
+
+::selection {
+	background-color: #352e7e;
+	color: #fff;
+}
 
 /* start of my CSS styling for index.html */
-body { background-color: #f2f2f2; }
-body { margin: 60px auto; width: 70%; }
 
-nav ul { font-size: 1em; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; padding: 0px; list-style: none; }
-nav ul { display: inline; margin-right: 40px; }
-footer { border-top: 1px solid #404040; width: 50% }
-
-a { text-decoration: none; color: #404040; }
-a:hover { text-decoration: underline; }
-
-h1, h2, h3, h4 { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; }
-h1 { font-size: 3em; }
-h2 { font-size: 2.7em; }
-h3 { font-size: 2.3em; }
-h4 { font-size: 1.9em; }
 
 /* start of my CSS styling for about.html */
-p { font-size: 1.5em; line-height: 1.4em; color: #333; }
+h2 {
+	color: #404040;
+	margin-bottom: 0.2em;
+	text-decoration: underline;
+}
+
+p, .list {
+	font-family: 'Helvetica', 'Arial', 'Sans-Serif'; 
+	font-size: 1.0em;
+	line-height: 1.2em;
+	color: #333;
+}
+
+#tab {
+	text-indent: 20px;
+}
+
+
