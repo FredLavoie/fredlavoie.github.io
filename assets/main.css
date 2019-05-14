@@ -95,15 +95,19 @@ h4 { font-size: 1.2em; }
 h3 {
 	color: #404040;
 	margin-bottom: 0.2em;
-	margin-top: 2em;
+	margin-top: 1.8em;
 	text-decoration:	none;
 }
 
 h4 {
 	color: #404040;
 	margin-bottom: 0.2em;
-	margin-top: 2em;
+	margin-top: 1.8em;
 	text-decoration:	underline;
+}
+
+#date-stamp {
+	margin-top: 30px;
 }
 
 /* start of my CSS styling for about.html 
@@ -111,7 +115,7 @@ h4 {
 h2 {
 	color: #404040;
 	margin-bottom: 0.2em;
-	margin-top: 2em;
+	margin-top: 1.8em;
 	text-decoration: underline;
 	
 }
@@ -120,6 +124,7 @@ p, .list {
 	font-family: 'Helvetica', 'Arial', 'Sans-Serif';
 	font-size: 1.0em;
 	line-height: 1.2em;
+	margin-bottom: 0.5em;
 	color: #333;
 	width: 800px;
 	max-width: 90%;
