@@ -43,11 +43,13 @@ q:before, q:after {
 	content: none;
 }
 
-/* start of my CSS styling for website */
+/********************************************************************* 
+	start of my CSS styling for website 
+**********************************************************************/
 body { 
 	background-color: #f2f2f2;
 	margin: 60px auto;
-	width: 80%;
+	max-width: 90%;
 }
 
 nav ul { 
@@ -57,12 +59,13 @@ nav ul {
 	list-style: none;
 	display: inline;
 	margin-right: 40px;
-	word-spacing: 8px;
+	word-spacing: 5px;
 }
 
 #horzBar {
 	border-top: 1px solid #404040;
-	width: 70%;
+	width: 300px;
+	max-width: 90%;
 }
 
 a {
@@ -73,34 +76,55 @@ a:hover {
 	text-decoration: underline;
 }
 
-h1, h2 { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; }
+h1, h2, h3, h4 { 
+	font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+	max-width: 90%;
+}
 h1 { font-size: 3em; }
 h2 { font-size: 1.3em; }
+h3 { font-size: 1.3em; }
+h4 { font-size: 1.2em; }
 
 ::selection {
 	background-color: #352e7e;
 	color: #fff;
 }
 
-/* start of my CSS styling for index.html */
+/* start of my CSS styling for now.html 
+*************************************************************/
+h3 {
+	color: #404040;
+	margin-bottom: 0.2em;
+	margin-top: 2em;
+	text-decoration:	none;
+}
 
+h4 {
+	color: #404040;
+	margin-bottom: 0.2em;
+	margin-top: 2em;
+	text-decoration:	underline;
+}
 
-/* start of my CSS styling for about.html */
+/* start of my CSS styling for about.html 
+*************************************************************/
 h2 {
 	color: #404040;
 	margin-bottom: 0.2em;
+	margin-top: 2em;
 	text-decoration: underline;
+	
 }
 
-p, .list {
-	font-family: 'Helvetica', 'Arial', 'Sans-Serif'; 
+p, .list { 
+	font-family: 'Helvetica', 'Arial', 'Sans-Serif';
 	font-size: 1.0em;
 	line-height: 1.2em;
 	color: #333;
+	width: 800px;
+	max-width: 90%;
 }
 
 #tab {
 	text-indent: 20px;
 }
-
-
