@@ -1,70 +1,33 @@
-/*************************************************************************************
-	CSS reset rules
-**************************************************************************************/
-
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-
 /************************************************************************************* 
-	start of my CSS styling for website 
+	start of CSS styling
 **************************************************************************************/
-body { 
-	background-color: #f2f2f2;
-	/* text-align: center;	 */
+body {
+	background-color: #c5bfbf;
 }
-
-#content {
-	display: grid;
+main {
 	max-width: 960px;
-	margin: 40px auto;
+	text-align: left;
+	padding: 5em 1em 1em 1em;
+	background-color: white;
+	margin: 0em 2.5em 0em 2.5em;
+ }
+ #nav-links {
+	display: flex;
+	justify-content: left;
+ }
+
+#nav-header {
+  position: fixed;
+	z-index: 1;
+	width: 100%;
+	padding: 0em 1.1em;  
+	background-color: #4a148c;
+	color: #f3e5f5;
 }
 
 nav ul { 
 	font-size: 1.1em;
 	font-family: 'Helvetica', 'Arial', 'Sans-Serif';
-	/* padding: 0px; */
 	list-style: none;
 	display: inline;
 	margin-right: 40px;
@@ -73,7 +36,7 @@ nav ul {
 
 #horzBar {
 	border-top: 1px solid #404040;
-	width: 300px;
+	width: 15em;
 	max-width: 90%;
 }
 
@@ -87,7 +50,6 @@ a:hover {
 
 h1, h2, h3, h4 { 
 	font-family: 'Helvetica', 'Arial', 'Sans-Serif';
-	max-width: 90%;
 }
 h1 { font-size: 3em; }
 h2 { font-size: 1.3em; }
@@ -99,9 +61,6 @@ h4 { font-size: 1.2em; }
 	color: #fff;
 }
 
-/*************************************************************************************
-/* start of my CSS styling for now.html 
-**************************************************************************************/
 h3 {
 	color: #404040;
 	margin-bottom: 0.2em;
@@ -117,12 +76,9 @@ h4 {
 }
 
 #date-stamp {
-	margin-top: 30px;
+	margin-top: 2em;
 }
 
-/*************************************************************************************
-/* start of my CSS styling for about.html 
-**************************************************************************************/
 h2 {
 	color: #404040;
 	margin-bottom: 0.2em;
@@ -137,10 +93,8 @@ p, .list {
 	line-height: 1.2em;
 	margin-bottom: 0.5em;
 	color: #333;
-	/* width: 800px;
-	max-width: 90%; */
 }
 
 #tab {
-	text-indent: 20px;
+	text-indent: 1.25em;
 }
