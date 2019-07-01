@@ -5,11 +5,10 @@ body {
 	background-color: #c5bfbf;
 }
 main {
-	max-width: 960px;
 	text-align: left;
 	padding: 5em 1em 1em 1em;
 	background-color: white;
-	margin: 0em 2.5em 0em 2.5em;
+	margin: 0em auto;
  }
  #nav-links {
 	display: flex;
@@ -97,4 +96,16 @@ p, .list {
 
 #tab {
 	text-indent: 1.25em;
+}
+
+@media (min-width: 801px) {
+  main {
+    max-width: 960px;;
+  }
+}
+
+ @media (max-width: 800px) {
+  main {
+    width: 100%;
+  }
 }
