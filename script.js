@@ -2,17 +2,18 @@ $(document).ready(function() {
 
   $('#project-content').css({'display': 'none'});
 
-
   // toggle 'now content' show/hide
   $('#now-button').on('click', function () {
-    $('#now-content').slideToggle(300);
-    $('#project-content').css({'display': 'none'});
+    $('#project-content').slideUp(400);
+    $('#now-content').slideToggle(400);
+    // $('#project-content').css({'display': 'none'});
   });
 
-    // toggle 'now content' show/hide
+    // toggle 'project content' show/hide
     $('#project-button').on('click', function () {
-      $('#project-content').slideToggle(300);
-      $('#now-content').css({'display': 'none'});
+      $('#now-content').slideUp(400);
+      $('#project-content').slideToggle(400);
+      // $('#now-content').css({'display': 'none'});
     });
 
 });
