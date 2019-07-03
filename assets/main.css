@@ -31,6 +31,10 @@ main {
 	color: #f3e5f5;
 }
 
+#date-stamp {
+	margin-top: 2em;
+}
+
 nav ul { 
 	font-size: 1.1em;
 	font-family: 'Helvetica', 'Arial', 'Sans-Serif';
@@ -48,6 +52,14 @@ a:hover {
 	text-decoration: underline;
 }
 
+p, #project-content ul li { 
+	font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+	font-size: 1.0em;
+	line-height: 1.2em;
+	margin-bottom: 0.5em;
+	color: #333;
+}
+
 h1, h2, h3, h4 { 
 	font-family: 'Helvetica', 'Arial', 'Sans-Serif';
 }
@@ -56,9 +68,11 @@ h2 { font-size: 1.3em; }
 h3 { font-size: 1.3em; }
 h4 { font-size: 1.2em; }
 
-::selection {
-	background-color: #352e7e;
-	color: #fff;
+h2 {
+	color: #404040;
+	margin-bottom: 0.2em;
+	margin-top: 1.8em;
+	text-decoration: underline;
 }
 
 h3 {
@@ -75,30 +89,44 @@ h4 {
 	text-decoration:	underline;
 }
 
-#date-stamp {
-	margin-top: 2em;
+li h4 {
+	margin-top: 0.5em;
 }
 
-h2 {
-	color: #404040;
-	margin-bottom: 0.2em;
-	margin-top: 1.8em;
-	text-decoration: underline;
-	
+.project-li {
+	display: flex;
+	flex-direction: column;
+	width: 18em;
+	height: 20em;
+	border: 0.12em solid #4a148c;
+	border-radius: 0.3em;
+	padding: 0.5em 0.5em;
+	margin: 0.5em 0.1em;
 }
 
-p, .list { 
-	font-family: 'Helvetica', 'Arial', 'Sans-Serif';
-	font-size: 1.0em;
-	line-height: 1.2em;
-	margin-bottom: 0.5em;
-	color: #333;
+.project-li a {
+	color: #352e7e;
 }
 
-#tab {
-	text-indent: 1.25em;
+.project-li img {
+	width: 15em;
 }
 
+#flex-project-items {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+::selection {
+	background-color: #352e7e;
+	color: #fff;
+}
+
+
+
+/* DESKTOP SPECIFIC CSS */
 @media (min-width: 801px) {
 	
 	main {
@@ -106,11 +134,11 @@ p, .list {
 	}
 	
 	#horzBar {
-		width: 15em;
+		width: 19.5em;
 		max-width: 90%;
 	}
 }
-
+/* MOBILE SPECIFIC CSS */
  @media (max-width: 800px) {
 	
 	body, main {
