@@ -48,6 +48,7 @@ a:hover {
 
 p, #project-content ul li {
 	font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+	text-align: justify;
 	font-size: 1.0em;
 	line-height: 1.2em;
 	margin-bottom: 0.5em;
