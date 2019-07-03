@@ -100,7 +100,8 @@ p, .list {
 }
 
 @media (min-width: 801px) {
-  main {
+	
+	main {
     max-width: 960px;;
 	}
 	
@@ -111,11 +112,12 @@ p, .list {
 }
 
  @media (max-width: 800px) {
-  body, main {
-    width: 100%;
+	
+	body, main {
+    width: auto;
 	}
 	
 	#horzBar {
-		width: 100%;
+		width: auto;
 	}
 }
