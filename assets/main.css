@@ -42,10 +42,6 @@ a {
 	text-decoration: none;
 	color: #404040;
 }
-a:hover {
-	background-color: #352e7e;
-	color: #fff;
-}
 
 p, #project-content ul li {
 	font-family: 'Helvetica', 'Arial', 'Sans-Serif';
@@ -118,9 +114,13 @@ li h4 {
 
 ::selection {
 	background-color: #352e7e;
-	color: #fff;
+	color: #f3e5f5;
 }
 
+a:hover {
+	background-color: #352e7e;
+	color: #fff;
+}
 
 
 /* DESKTOP SPECIFIC CSS */
