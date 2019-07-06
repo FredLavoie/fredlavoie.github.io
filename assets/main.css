@@ -9,7 +9,8 @@ main {
 	padding: 5em 1em 1em 1em;
 	background-color: white;
 	margin: 0em auto;
-
+	min-height: 100vh;
+	height: 100%;
  }
 
  #horzBar {
@@ -25,7 +26,7 @@ main {
 	margin: auto;
 	padding: 0.1em 0em;
 	background-color: #4a148c;
-	color: #f3e5f5;
+	color: #f4edf5;
 }
 
 #date-stamp {
@@ -88,9 +89,10 @@ li h4 {
 .project-li {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	width: 18em;
-	height: 18em;
+	justify-content: space-around;
+	align-items: center;
+	width: 22em;
+	height: 20em;
 	border: 0.12em solid #4a148c;
 	border-radius: 0.3em;
 	padding: 0.5em 0.5em;
@@ -107,21 +109,25 @@ li h4 {
 
 #flex-project-items {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
 	align-items: center;
+}
+
+.project-li h4 {
+	text-align: center;	
+}
+
+#links a {
+	background-color: #352e7e;
+	color: #fff;
+	padding: 0.3em 0.6em;
 }
 
 ::selection {
 	background-color: #352e7e;
 	color: #f3e5f5;
 }
-
-a:hover {
-	background-color: #352e7e;
-	color: #fff;
-}
-
 
 /* DESKTOP SPECIFIC CSS */
 @media (min-width: 801px) {
