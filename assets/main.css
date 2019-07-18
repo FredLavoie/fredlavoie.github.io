@@ -1,5 +1,5 @@
 /*************************************************************************************
-	start of CSS styling
+	CSS STYLING
 **************************************************************************************/
 body {
 	background-color: #e0dbdb;
@@ -39,9 +39,14 @@ nav ul {
 	list-style: none;
 }
 
-a {
+nav ul a {
 	text-decoration: none;
 	color: #404040;
+}
+
+nav ul a:hover {
+	background-color: #4a148c;
+	color: #f4edf5;
 }
 
 p, #project-content ul li {
@@ -99,10 +104,6 @@ li h4 {
 	margin: 0.5em 0.1em;
 }
 
-.project-li a {
-	color: #352e7e;
-}
-
 .project-li img {
 	width: 15em;
 }
@@ -119,15 +120,20 @@ li h4 {
 }
 
 #links a {
-	background-color: #352e7e;
+	text-decoration: none;
+	background-color: #4a148c;
 	color: #fff;
-	padding: 0.3em 0.6em;
+	padding: 0.4em 0.6em;
 }
 
 ::selection {
-	background-color: #352e7e;
-	color: #f3e5f5;
+	background-color: #4a148c;
+	color: #f4edf5;
 }
+
+/*************************************************************************************
+	MEDIA QUERIES
+**************************************************************************************/
 
 /* DESKTOP SPECIFIC CSS */
 @media (min-width: 801px) {
