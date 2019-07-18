@@ -35,7 +35,7 @@ main {
 
 nav ul {
 	font-size: 1.1em;
-	font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+	font-family: 'Ubuntu', sans-serif;
 	list-style: none;
 }
 
@@ -50,7 +50,7 @@ nav ul a:hover {
 }
 
 p, #project-content ul li {
-	font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+	font-family: 'Ubuntu', sans-serif;
 	text-align: justify;
 	font-size: 1.0em;
 	line-height: 1.2em;
@@ -59,7 +59,7 @@ p, #project-content ul li {
 }
 
 h1, h2, h3, h4 {
-	font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+	font-family: 'Ubuntu', sans-serif;
 }
 h1 { font-size: 3em; }
 h2 { font-size: 1.3em; }
