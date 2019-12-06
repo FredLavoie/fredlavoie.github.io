@@ -5,7 +5,7 @@ let projectState = 0;
 
 $(document).ready(function() {
 
-  $('#now-button').css({'background-color': '#4a148c', 'color': '#f4edf5'});
+  $('#now-button').css({'background-color': '#4a148c', 'color': '#f4edf5', 'padding': '0.1em 0.2em'});
   $('#project-content').css({'display': 'none'});
   $('#goals-content').css({'display': 'none'});
 
@@ -20,7 +20,7 @@ $(document).ready(function() {
       $('#project-content').fadeOut(5);
     }
 
-    $('#now-button').css({'background-color': '#4a148c', 'color': '#f4edf5'});
+    $('#now-button').css({'background-color': '#4a148c', 'color': '#f4edf5', 'padding': '0.1em 0.2em'});
     $('#goals-button').css({'background-color': '', 'color': ''});
     $('#project-button').css({'background-color': '', 'color': ''});
   });
@@ -38,7 +38,7 @@ $(document).ready(function() {
 
     $('#now-button').css({'background-color': '', 'color': ''});
     $('#goals-button').css({'background-color': '', 'color': ''});
-    $('#project-button').css({'background-color': '#4a148c', 'color': '#f4edf5'});
+    $('#project-button').css({'background-color': '#4a148c', 'color': '#f4edf5', 'padding': '0.1em 0.2em'});
   });
 
    // toggle 'goals content' show/hide
@@ -53,7 +53,7 @@ $(document).ready(function() {
     }
 
     $('#now-button').css({'background-color': '', 'color': ''});
-    $('#goals-button').css({'background-color': '#4a148c', 'color': '#f4edf5'});
+    $('#goals-button').css({'background-color': '#4a148c', 'color': '#f4edf5', 'padding': '0.1em 0.2em'});
     $('#project-button').css({'background-color': '', 'color': ''});
   });
 
