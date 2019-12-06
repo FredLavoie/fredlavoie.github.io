@@ -56,13 +56,17 @@ nav ul a:hover {
 	padding: 0.1em 0.2em;
 }
 
-p, #project-content ul li {
+p, #project-content ul li, #goals-content ul li {
 	font-family: 'Ubuntu', sans-serif;
 	text-align: justify;
 	font-size: 1.0em;
 	line-height: 1.2em;
 	margin-bottom: 0.5em;
 	color: #333;
+}
+
+#goals-content ul li {
+	padding-left: 1em;
 }
 
 h1, h2, h3, h4 {
@@ -96,6 +100,10 @@ h4 {
 
 li h4 {
 	margin-top: 0.5em;
+}
+
+.done {
+	text-decoration: line-through;
 }
 
 .project-li {
