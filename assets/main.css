@@ -13,9 +13,11 @@ main {
 	height: 100%;
 	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
  }
-
- #horzBar {
-	border-top: 1px solid #404040;
+ 
+ #nav-links {
+	display: inline-block;
+	background-color: #f3f3f3;
+	padding: 0.2em 0.3em;
  }
 
 #nav-header {
@@ -38,26 +40,33 @@ nav ul {
 	font-size: 1.1em;
 	font-family: 'Ubuntu', sans-serif;
 	list-style: none;
+	word-spacing: 0.25em;
 }
 
 nav ul a {
 	text-decoration: none;
 	font-weight: bold;
 	color: #404040;
+	padding: 0.2em;
 }
 
 nav ul a:hover {
 	background-color: #4a148c;
 	color: #f4edf5;
+	padding: 0.1em 0.2em;
 }
 
-p, #project-content ul li {
+p, #project-content ul li, #goals-content ul li {
 	font-family: 'Ubuntu', sans-serif;
 	text-align: justify;
 	font-size: 1.0em;
 	line-height: 1.2em;
 	margin-bottom: 0.5em;
 	color: #333;
+}
+
+#goals-content ul li {
+	padding-left: 1em;
 }
 
 h1, h2, h3, h4 {
@@ -91,6 +100,10 @@ h4 {
 
 li h4 {
 	margin-top: 0.5em;
+}
+
+.done {
+	text-decoration: line-through;
 }
 
 .project-li {
@@ -159,36 +172,14 @@ li h4 {
 
 /* DESKTOP SPECIFIC CSS */
 @media (min-width: 801px) {
-
 	main {
-    max-width: 960px;;
-	}
-
-	nav ul {
-		display: inline;
-		margin-right: 2.5em;
-		word-spacing: 0.25em;
-	}
-
-	#horzBar {
-		width: 16.1em;
-		max-width: 90%;
+    max-width: 960px;
 	}
 }
+
 /* MOBILE SPECIFIC CSS */
  @media (max-width: 800px) {
-
 	body, main {
     width: auto;
-	}
-
-	nav ul {
-		display: flex;
-		display: inline;
-		word-spacing: 1em;
-	}
-
-	#horzBar {
-		width: auto;
 	}
 }
