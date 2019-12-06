@@ -40,7 +40,6 @@ nav ul {
 	font-size: 1.1em;
 	font-family: 'Ubuntu', sans-serif;
 	list-style: none;
-	word-spacing: 0.25em;
 }
 
 nav ul a {
@@ -179,6 +178,10 @@ li h4 {
 	nav ul a {
 		padding: 0.2em;
 	}
+
+	nav ul {
+		word-spacing: 0.25em;
+	}
 }
 
 /* MOBILE SPECIFIC CSS */
@@ -189,5 +192,9 @@ li h4 {
 
 	nav ul a {
 		padding: 0.2em 0.1em;
+	}
+
+	nav ul {
+		word-spacing: 0.1em;
 	}
 }
