@@ -175,6 +175,10 @@ li h4 {
     max-width: 960px;
 	}
 
+	#nav-links {
+		display: inline-block;
+	}
+
 	nav ul a {
 		padding: 0.2em;
 	}
@@ -190,11 +194,16 @@ li h4 {
     width: auto;
 	}
 
+	#nav-links {
+		display: flex;
+		justify-content: center;
+	}
+
 	nav ul a {
-		padding: 0.2em 0.1em;
+		padding: 0.2em 0.2em;
 	}
 
 	nav ul {
-		word-spacing: 0.1em;
+		word-spacing: 0em;
 	}
 }
