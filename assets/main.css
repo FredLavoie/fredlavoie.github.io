@@ -46,13 +46,11 @@ nav ul a {
 	text-decoration: none;
 	font-weight: bold;
 	color: #404040;
-	/* padding: 0.2em; */
 }
 
 nav ul a:hover {
 	background-color: #4a148c;
 	color: #f4edf5;
-	padding: 0.1em 0.2em;
 }
 
 p, #project-content ul li, #goals-content ul li {
@@ -186,6 +184,10 @@ li h4 {
 	nav ul {
 		word-spacing: 0.25em;
 	}
+
+	nav ul a:hover {
+		padding: 0.1em 0.2em;
+	}
 }
 
 /* MOBILE SPECIFIC CSS */
@@ -200,10 +202,13 @@ li h4 {
 	}
 
 	nav ul a {
-		padding: 0.2em 0.2em;
+		padding: 0.2em 0.1em;
 	}
 
 	nav ul {
 		word-spacing: 0em;
+	}
+	nav ul a:hover {
+		padding: 0.1em 0.1em;
 	}
 }
