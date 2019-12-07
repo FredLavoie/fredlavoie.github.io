@@ -31,7 +31,6 @@ main {
 }
 
 nav ul {
-	font-size: 1.1em;
 	font-family: 'Ubuntu', sans-serif;
 	list-style: none;
 }
@@ -174,6 +173,7 @@ li h4 {
 	}
 
 	nav ul {
+		font-size: 1.1em;
 		word-spacing: 0.25em;
 	}
 
@@ -200,6 +200,7 @@ li h4 {
 	}
 
 	nav ul {
+		font-size: 1.0em;
 		word-spacing: 0em;
 	}
 
