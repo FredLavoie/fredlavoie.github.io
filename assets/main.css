@@ -135,8 +135,8 @@ li h4 {
 }
 
 .links a:hover {
-	padding: 0.5em 0.6em;
-	transition: padding 0.2s ease;
+	background-color: #673ab7;
+	transition: background-color 100ms linear;
 }
 
 .preview-icon {
