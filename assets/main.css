@@ -123,8 +123,18 @@ li h4 {
 	align-items: center;
 }
 
+.flex-container {
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+}
+
 .project-li h4 {
 	text-align: center;	
+}
+
+.links {
+	margin: 0.2em;
 }
 
 .links a {
