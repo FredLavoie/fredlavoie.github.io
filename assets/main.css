@@ -20,7 +20,7 @@ main {
 	padding: 0.1em 0em;
 	background-color: white;
 	color: #404040;
-	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
 }
 
 #date-stamp {
