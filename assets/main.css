@@ -1,17 +1,13 @@
 /*************************************************************************************
 	CSS STYLING
 **************************************************************************************/
-body {
-	background-color: #e4e2e2;
-}
 main {
 	text-align: left;
 	padding: 5em 1em 1em 1em;
-	background-color: white;
+	/* background-color: white; */
 	margin: 0em auto;
 	min-height: 100vh;
 	height: 100%;
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
  }
 
 #nav-header {
@@ -22,8 +18,9 @@ main {
 	justify-content: center;
 	margin: auto;
 	padding: 0.1em 0em;
-	background-color: #4a148c;
-	color: #f4edf5;
+	background-color: white;
+	color: #404040;
+	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
 }
 
 #date-stamp {
@@ -31,13 +28,12 @@ main {
 }
 
 nav ul {
-	font-family: 'Ubuntu', sans-serif;
+	font-family: -apple-system, Helvetica, arial, sans-serif;
 	list-style: none;
 }
 
 nav ul a {
 	text-decoration: none;
-	font-weight: bold;
 	color: #404040;
 }
 
@@ -47,12 +43,12 @@ nav ul a:hover {
 }
 
 p, #project-content ul li, #goals-content ul li {
-	font-family: 'Ubuntu', sans-serif;
+	font-family: -apple-system, Helvetica, arial, sans-serif;
 	text-align: justify;
 	font-size: 1.0em;
 	line-height: 1.2em;
 	margin-bottom: 0.5em;
-	color: #333;
+	color: #404040;
 }
 
 em {
@@ -64,7 +60,7 @@ em {
 }
 
 h1, h2, h3, h4 {
-	font-family: 'Ubuntu', sans-serif;
+	font-family: -apple-system, Helvetica, arial, sans-serif;
 }
 h1 { font-size: 3em; }
 h2 { font-size: 1.3em; }
@@ -145,8 +141,7 @@ li h4 {
 }
 
 .links a:hover {
-	background-color: #673ab7;
-	transition: background-color 100ms linear;
+	box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.3);
 }
 
 .preview-icon {
@@ -192,11 +187,11 @@ li h4 {
 	}
 
 	nav ul a {
-		padding: 0.2em;
+		padding: 0em 0.2em;
 	}
 
 	nav ul a:hover {
-		padding: 0.2em;
+		padding: 0em 0.2em;
 	}
 }
 
@@ -219,10 +214,6 @@ li h4 {
 	}
 
 	nav ul a {
-		padding: 0.3em 0.05em;
-	}
-
-	nav ul a:hover {
 		padding: 0.3em 0.05em;
 	}
 }
