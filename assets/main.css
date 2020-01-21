@@ -11,7 +11,7 @@ main {
  }
 
 #nav-header {
-  position: fixed;
+	position: fixed;
 	z-index: 1;
 	width: 100%;
 	display: flex;
@@ -168,7 +168,7 @@ li h4 {
 /* DESKTOP SPECIFIC CSS */
 @media (min-width: 801px) {
 	main {
-    max-width: 800px;
+		max-width: 800px;
 	}
 
 	#nav-links {
@@ -192,19 +192,24 @@ li h4 {
 }
 
 /* MOBILE SPECIFIC CSS */
- @media (max-width: 800px) {
+@media (max-width: 800px) {
 	body, main {
-    width: auto;
+		width: auto;
 	}
 
 	#nav-links {
 		background-color: #f3f3f3;
 		display: flex;
+		padding: 0.2em 0.3em;
 		justify-content: center;
 	}
 
 	nav ul {
 		font-size: 1.0em;
 		word-spacing: 0em;
+	}
+
+	nav ul a {
+		padding: 0em 0.2em;
 	}
 }
