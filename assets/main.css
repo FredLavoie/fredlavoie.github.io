@@ -92,10 +92,6 @@ li h4 {
 	margin-top: 0.5em;
 }
 
-.done {
-	text-decoration: line-through;
-}
-
 .project-li {
 	display: flex;
 	flex-direction: column;
@@ -205,15 +201,10 @@ li h4 {
 		background-color: #f3f3f3;
 		display: flex;
 		justify-content: center;
-		padding: 0.3em 0em;
 	}
 
 	nav ul {
 		font-size: 1.0em;
 		word-spacing: 0em;
-	}
-
-	nav ul a {
-		padding: 0.3em 0.05em;
 	}
 }
