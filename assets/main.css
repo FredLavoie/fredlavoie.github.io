@@ -1,6 +1,10 @@
 /*************************************************************************************
 	CSS STYLING
 **************************************************************************************/
+body {
+	font-family: -apple-system, Helvetica, arial, sans-serif;
+}
+
 main {
 	text-align: left;
 	padding: 5em 1em 1em 1em;
@@ -9,66 +13,6 @@ main {
 	height: 100%;
  }
 
-#nav-header {
-	position: fixed;
-	z-index: 1;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	margin: auto;
-	padding: 0.1em 0em;
-	background-color: white;
-	color: #404040;
-	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
-}
-
-#date-stamp {
-	margin-top: 2em;
-}
-
-nav ul {
-	font-family: -apple-system, Helvetica, arial, sans-serif;
-	list-style: none;
-}
-
-nav ul a {
-	text-decoration: none;
-	color: #404040;
-}
-
-nav ul a:hover {
-	background-color: #4a148c;
-	color: #f4edf5;
-}
-
-p, #project-content ul li {
-	font-family: -apple-system, Helvetica, arial, sans-serif;
-	text-align: justify;
-	font-size: 1.0em;
-	line-height: 1.2em;
-	margin-bottom: 0.5em;
-	color: #404040;
-}
-
-#goals-content ul li {
-	font-family: -apple-system, Helvetica, arial, sans-serif;
-	font-size: 1.0em;
-	line-height: 1.2em;
-	margin-bottom: 0.5em;
-	color: #404040;
-}
-
-em {
-	color: #4a148c;
-}
-
-#goals-content ul li {
-	padding-left: 0.8em;
-}
-
-h1, h2, h3, h4 {
-	font-family: -apple-system, Helvetica, arial, sans-serif;
-}
 h1 { font-size: 3em; }
 h2 { font-size: 1.3em; }
 h3 { font-size: 1.3em; }
@@ -95,9 +39,69 @@ h4 {
 	text-decoration:	underline;
 }
 
+nav ul {
+	list-style: none;
+}
+
+nav ul a {
+	text-decoration: none;
+	color: #404040;
+}
+
+em {
+	color: #4a148c;
+}
+
 li h4 {
 	margin-top: 0.5em;
 }
+
+/*********************************** ID SELECTORS ***********************************/
+
+p, #project-content ul li {
+	text-align: justify;
+	font-size: 1.0em;
+	line-height: 1.2em;
+	margin-bottom: 0.5em;
+	color: #404040;
+}
+
+#goals-content ul li {
+	font-size: 1.0em;
+	line-height: 1.2em;
+	margin-bottom: 0.5em;
+	color: #404040;
+}
+
+#nav-header {
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	padding: 0.1em 0em;
+	background-color: white;
+	color: #404040;
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
+}
+
+#date-stamp {
+	margin-top: 2em;
+}
+
+#goals-content ul li {
+	padding-left: 0.8em;
+}
+
+#flex-project-items {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+/********************************** CLASS SELECTORS *********************************/
 
 .project-li {
 	display: flex;
@@ -112,13 +116,6 @@ li h4 {
 
 .project-img {
 	height: 10em;
-}
-
-#flex-project-items {
-	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	align-items: center;
 }
 
 .flex-container {
@@ -166,10 +163,24 @@ li h4 {
 	text-indent: 1.1em;
 }
 
+.selected {
+	background-color: #4a148c;
+	color: #f4edf5;
+	padding: 0em 0.2em;
+}
+
+/********************************* PSEUDO SELECTORS *********************************/
+
+nav ul a:hover {
+	background-color: #4a148c;
+	color: #f4edf5;
+}
+
 ::selection {
 	background-color: #4a148c;
 	color: #f4edf5;
 }
+
 
 /*************************************************************************************
 	MEDIA QUERIES
