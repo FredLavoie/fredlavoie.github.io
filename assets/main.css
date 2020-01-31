@@ -217,14 +217,14 @@ nav ul a:hover {
 }
 
 /* TABLET SPECIFIC CSS */
-@media (min-width: 750px) and (max-width: 820px) {
+@media (max-width: 821px) and (min-width: 750px) {
 	.project-li {
 		width: 21em;
 	}
 }
 
 /* MOBILE SPECIFIC CSS */
-@media (max-width: 820px) {
+@media (max-width: 821px) {
 	body, main {
 		width: auto;
 	}
