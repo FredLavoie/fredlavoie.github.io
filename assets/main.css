@@ -82,8 +82,12 @@ p, #project-content ul li {
   margin: auto;
   padding: 0.1em 0em;
   background-color: white;
-  color: #404040;
   box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
+}
+
+#nav-header a {
+  text-decoration: none;
+  color: #404040;
 }
 
 #date-stamp {
