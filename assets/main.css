@@ -1,16 +1,16 @@
 /*************************************************************************************
-	CSS STYLING
+  CSS STYLING
 **************************************************************************************/
 body {
-	font-family: -apple-system, Helvetica, arial, sans-serif;
+  font-family: -apple-system, Helvetica, arial, sans-serif;
 }
 
 main {
-	text-align: left;
-	padding: 5em 1em 1em 1em;
-	margin: 0em auto;
-	min-height: 100vh;
-	height: 100%;
+  text-align: left;
+  padding: 5em 1em 1em 1em;
+  margin: 0em auto;
+  min-height: 100vh;
+  height: 100%;
  }
 
 h1 { font-size: 3em; }
@@ -19,234 +19,269 @@ h3 { font-size: 1.3em; }
 h4 { font-size: 1.2em; }
 
 h2 {
-	color: #404040;
-	margin-bottom: 0.2em;
-	margin-top: 1.8em;
-	text-decoration: underline;
+  color: #404040;
+  margin-bottom: 0.2em;
+  margin-top: 1.8em;
+  text-decoration: underline;
 }
 
 h3 {
-	color: #404040;
-	margin-bottom: 0.2em;
-	margin-top: 1.8em;
-	text-decoration:	none;
+  color: #404040;
+  margin-bottom: 0.2em;
+  margin-top: 1.8em;
+  text-decoration:	none;
 }
 
 h4 {
-	color: #404040;
-	margin-bottom: 0.2em;
-	margin-top: 1.8em;
-	text-decoration:	underline;
+  color: #404040;
+  margin-bottom: 0.2em;
+  margin-top: 1.8em;
+  text-decoration:	underline;
 }
 
 nav ul {
-	list-style: none;
+  list-style: none;
 }
 
 nav ul a {
-	text-decoration: none;
-	color: #404040;
+  text-decoration: none;
+  color: #404040;
 }
 
 em {
-	color: #4a148c;
+  color: #4a148c;
 }
 
 li h4 {
-	margin-top: 0.5em;
+  margin-top: 0.5em;
 }
 
 /*********************************** ID SELECTORS ***********************************/
 
 p, #project-content ul li {
-	text-align: justify;
-	font-size: 1.0em;
-	line-height: 1.2em;
-	margin-bottom: 0.5em;
-	color: #404040;
+  text-align: justify;
+  font-size: 1.0em;
+  line-height: 1.2em;
+  margin-bottom: 0.5em;
+  color: #404040;
 }
 
 #goals-content ul li {
-	font-size: 1.0em;
-	line-height: 1.2em;
-	margin-bottom: 0.5em;
-	color: #404040;
+  font-size: 1.0em;
+  line-height: 1.2em;
+  margin-bottom: 0.5em;
+  color: #404040;
 }
 
 #nav-header {
-	position: fixed;
-	z-index: 1;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	margin: auto;
-	padding: 0.1em 0em;
-	background-color: white;
-	color: #404040;
-	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 0.1em 0em;
+  background-color: white;
+  color: #404040;
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
 }
 
 #date-stamp {
-	margin-top: 2em;
+  margin-top: 2em;
 }
 
 #goals-content ul li {
-	padding-left: 0.8em;
+  padding-left: 0.8em;
 }
 
 #flex-project-items {
-	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 /********************************** CLASS SELECTORS *********************************/
 
 .project-li {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	height: 20em;
-	border: 0.12em solid #4a148c;
-	padding: 0.5em 0.5em;
-	margin: 0.5em 0.1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 20em;
+  border: 0.12em solid #4a148c;
+  padding: 0.5em 0.5em;
+  margin: 0.5em 0.1em;
 }
 
 .project-img {
-	height: 10em;
+  height: 10em;
 }
 
 .flex-container {
-	display: flex;
-	justify-content: center;
-	align-items: baseline;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .project-li h4 {
-	text-align: center;	
+  text-align: center;	
 }
 
 .links {
-	margin: 0.2em;
+  margin: 0.2em;
 }
 
 .links a {
-	text-decoration: none;
-	background-color: #4a148c;
-	color: #fff;
-	padding: 0.4em 0.6em;
+  text-decoration: none;
+  background-color: #4a148c;
+  color: #fff;
+  padding: 0.4em 0.6em;
 }
 
 .links a:hover {
-	box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.3);
+  box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.3);
 }
 
 .preview-icon {
-	position: relative;
-	top: 0.35em;
-	height: 1.4em;
-	width: 1.4em;
-	padding-right: 0.3em;
+  position: relative;
+  top: 0.35em;
+  height: 1.4em;
+  width: 1.4em;
+  padding-right: 0.3em;
 }
 
 .github-icon {
-	position: relative;
-	top: 0.2em;
-	height: 1.2em;
-	width: 1.2em;
-	padding-right: 0.3em;
+  position: relative;
+  top: 0.2em;
+  height: 1.2em;
+  width: 1.2em;
+  padding-right: 0.3em;
 }
 
 .indented {
-	text-indent: 1.1em;
+  text-indent: 1.1em;
 }
 
-.selected {
-	background-color: #4a148c;
-	color: #f4edf5;
-	padding: 0em 0.2em;
+/* .selected {
+  background-color: #4a148c;
+  color: #f4edf5;
+  padding: 0em 0.2em;
+} */
+
+.blog-post a {
+  text-decoration: none;
+  color: #404040;
 }
 
 /********************************* PSEUDO SELECTORS *********************************/
 
 nav ul a:hover {
-	background-color: #4a148c;
-	color: #f4edf5;
+  background-color: #4a148c;
+  color: #f4edf5;
 }
 
 ::selection {
-	background-color: #4a148c;
-	color: #f4edf5;
+  background-color: #4a148c;
+  color: #f4edf5;
 }
 
+.blog-post a:hover {
+  text-decoration: underline;
+}
 
 /*************************************************************************************
-	MEDIA QUERIES
+  MEDIA QUERIES
 **************************************************************************************/
 
 /* DESKTOP SPECIFIC CSS */
 @media (min-width: 820px) {
-	main {
-		max-width: 800px;
-	}
+  main {
+    max-width: 800px;
+  }
 
-	#nav-links {
-		background-color: #f3f3f3;
-		display: inline-block;
-		padding: 0.2em 0.3em;
-	}
+  #nav-links {
+    background-color: #f3f3f3;
+    display: inline-block;
+    padding: 0.2em 0.3em;
+  }
 
-	nav ul {
-		font-size: 1.1em;
-		word-spacing: 0.25em;
-	}
+  nav ul {
+    font-size: 1.1em;
+    word-spacing: 0.25em;
+  }
 
-	nav ul a {
-		padding: 0em 0.2em;
-	}
+  nav ul a {
+    padding: 0em 0.2em;
+  }
 
-	nav ul a:hover {
-		padding: 0em 0.2em;
-	}
+  nav ul a:hover {
+    padding: 0em 0.2em;
+  }
 
-	.project-li {
-		width: 15em;
-	}
+  .project-li {
+    width: 15em;
+  }
+
+  .selected {
+    background-color: #4a148c;
+    color: #f4edf5;
+    padding: 0em 0.2em;
+  }
+  #mobile-menu {
+    display: none;
+  }
 }
 
 /* TABLET SPECIFIC CSS */
 @media (max-width: 821px) and (min-width: 750px) {
-	.project-li {
-		width: 21em;
-	}
+  .project-li {
+    width: 21em;
+  }
 }
 
 /* MOBILE SPECIFIC CSS */
 @media (max-width: 821px) {
-	body, main {
-		width: auto;
-	}
+  body, main {
+    width: auto;
+  }
 
-	#nav-links {
-		background-color: #f3f3f3;
-		display: flex;
-		padding: 0.2em 0.3em;
-		justify-content: center;
-	}
+  #nav-links {
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+  }
 
-	nav ul {
-		font-size: 1.0em;
-		word-spacing: 0em;
-	}
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.0em;
+    /* word-spacing: 0em; */
+  }
 
-	nav ul a {
-		padding: 0em 0.2em;
-	}
+  nav ul a {
+    text-align: center;
+    padding: 0.50em;
+    margin: 0.10em;
+  }
 
-	.project-li {
-		width: 21em;
-	}
+  .selected {
+    background-color: #4a148c;
+    color: #f4edf5;
+    padding: 0.50em;
+  }
 
+  .project-li {
+    width: 21em;
+  }
+
+  #desktop-menu {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
 }
