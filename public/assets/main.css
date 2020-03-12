@@ -66,8 +66,8 @@ li h4 {
 p, #project-content ul li {
   text-align: justify;
   font-size: 1.0em;
-  line-height: 1.2em;
-  margin-bottom: 0.5em;
+  line-height: 1.4em;
+  margin-bottom: 1em;
   color: #404040;
 }
 
@@ -163,15 +163,22 @@ p, #project-content ul li {
   padding-right: 0.3em;
 }
 
+.icon-home {
+  position: relative;
+  top: 2em;
+  height: 2em;
+  width: 2em;
+  padding-right: 0.8em;
+}
+
+.icon-home a:hover {
+  height: 2.2em;
+  width: 2.2em;
+}
+
 .indented {
   text-indent: 1.1em;
 }
-
-/* .selected {
-  background-color: #4a148c;
-  color: #f4edf5;
-  padding: 0em 0.2em;
-} */
 
 .blog-post a {
   text-decoration: none;
