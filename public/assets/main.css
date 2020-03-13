@@ -169,6 +169,7 @@ p, #project-content ul li {
   height: 2em;
   width: 2em;
   padding-right: 0.8em;
+  margin-bottom: 3em;
 }
 
 .icon-home a:hover {
