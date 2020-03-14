@@ -13,13 +13,15 @@ main {
   height: 100%;
  }
 
-h1 { font-size: 3em; }
-h2 { font-size: 1.3em; }
-h3 { font-size: 1.3em; }
-h4 { font-size: 1.2em; }
+h1 a { 
+  color: #404040;
+  font-size: 3em;
+  text-decoration: none; 
+}
 
 h2 {
   color: #404040;
+  font-size: 1.3em;
   margin-bottom: 0.2em;
   margin-top: 1.8em;
   text-decoration: underline;
@@ -27,6 +29,7 @@ h2 {
 
 h3 {
   color: #404040;
+  font-size: 1.3em;
   margin-bottom: 0.2em;
   margin-top: 1.8em;
   text-decoration:	none;
@@ -34,14 +37,10 @@ h3 {
 
 h4 {
   color: #404040;
+  font-size: 1.2em;
   margin-bottom: 0.2em;
   margin-top: 1.8em;
-  text-decoration:	underline;
-}
-
-h1 a {
-  text-decoration: none;
-  color: #404040;
+  /* text-decoration:	underline; */
 }
 
 nav ul {
@@ -75,7 +74,7 @@ p, #project-content ul li {
   font-size: 1.0em;
   line-height: 1.2em;
   margin-bottom: 0.5em;
-  color: #404040;
+  /* color: #404040; */
 }
 
 #nav-header {
@@ -215,16 +214,16 @@ nav ul a:hover {
   #nav-links {
     background-color: #f3f3f3;
     display: inline-block;
-    padding: 0.2em 0.3em;
+    padding: 0.17em 0.3em;
   }
 
   nav ul {
-    font-size: 1.1em;
+    font-size: 1.2em;
     word-spacing: 0.25em;
   }
 
   nav ul a {
-    padding: 0em 0.2em;
+    padding: 0.2em 0.2em;
   }
 
   nav ul a:hover {
@@ -271,7 +270,6 @@ nav ul a:hover {
     display: flex;
     flex-direction: column;
     font-size: 1.0em;
-    /* word-spacing: 0em; */
   }
 
   nav ul a {
@@ -295,5 +293,71 @@ nav ul a:hover {
   }
   #menu {
     display: block;
+  }
+}
+
+/* DARK THEME CSS */
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #202020;
+  }
+
+  #nav-header {
+    background-color: #161616;
+  }
+
+  h1, h1 a, h2, h3, h4, p, a {
+    color: #cecece;
+  }
+
+  ul li {
+    color: #cecece;
+  }
+
+  #nav-links {
+    background-color: #414040;
+  }
+  #nav-links a {
+    color: #cecece;
+  }
+
+  .blog-post a {
+    color: #cecece;
+  }
+
+  em {
+    color: #ba68c8;
+  }
+
+  .project-li {
+    border: 0.12em solid #9c27b0;
+  }
+
+  .links a {
+    background-color: #9c27b0;
+    color: #cecece;
+  }
+
+  nav ul a:hover {
+    background-color: #9c27b0;
+    color: #cecece;
+  }
+  
+  ::selection {
+    background-color: #9c27b0;
+    color: #cecece;
+  }
+
+  .selected {
+    background-color: #9c27b0;
+    color: #cecece;
+  }
+
+  #invert-svg-color-1 {
+    filter: invert(0.665) sepia(1) saturate(0) hue-rotate(97deg);
+  }
+
+  #invert-svg-color-2 {
+    filter: invert(0.336) sepia(1) saturate(0) hue-rotate(97deg);
   }
 }
