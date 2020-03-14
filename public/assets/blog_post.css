@@ -1,0 +1,38 @@
+/*************************************************************************************
+  CSS STYLING - BLOG POSTS
+**************************************************************************************/
+
+/* 
+  styling blog posts with monospace font for code blocks
+*/
+
+a {
+  color: #4a148c;
+  text-decoration: none; 
+}
+
+.code-block {
+  font-family: Consolas, Monaco, monospace;
+
+}
+
+.inline-code {
+  font-family: Consolas, Monaco, monospace;
+  background-color: #f4edf5;
+}
+
+/* DARK THEME CSS */
+@media (prefers-color-scheme: dark) {
+
+  a {
+    color: #ba68c8;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .inline-code {
+    background-color: #414040;  
+  }
+}
