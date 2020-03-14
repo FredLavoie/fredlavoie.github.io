@@ -12,13 +12,19 @@ a {
 }
 
 .code-block {
-  font-family: Consolas, Monaco, monospace;
-
+  font-family: Menlo, monospace;
+  background-color: #f4edf5;
+  text-align: left;
+  padding: 0.2em;
+  border-radius: 2px;
+  width: auto;
+  font-size: 0.9em;
 }
 
 .inline-code {
-  font-family: Consolas, Monaco, monospace;
+  font-family: Menlo, monospace;
   background-color: #f4edf5;
+  font-size: 0.9em;
 }
 
 /* DARK THEME CSS */
@@ -33,6 +39,10 @@ a {
   }
 
   .inline-code {
+    background-color: #414040;  
+  }
+
+  .code-block {
     background-color: #414040;  
   }
 }
