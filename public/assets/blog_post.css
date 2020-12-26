@@ -38,11 +38,11 @@ a {
     text-decoration: underline;
   }
 
-  .inline-code {
+  .code-block {
     background-color: #414040;  
   }
 
-  .code-block {
-    background-color: #414040;  
+  .inline-code {
+    background-color: #414040;
   }
 }
