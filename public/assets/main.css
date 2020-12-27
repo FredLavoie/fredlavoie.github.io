@@ -40,7 +40,13 @@ h4 {
   font-size: 1.2em;
   margin-bottom: 0.2em;
   margin-top: 1.8em;
-  /* text-decoration:	underline; */
+}
+
+h5 {
+  color: #404040;
+  font-size: 1.0em;
+  margin-bottom: 1em;
+  margin-top: 1.8em;
 }
 
 nav ul {
@@ -180,9 +186,14 @@ p, #project-content ul li {
   text-indent: 1.1em;
 }
 
+.blog-post {
+  padding-bottom: 0.8em;
+}
+
 .blog-post a {
   text-decoration: none;
   color: #404040;
+  padding-bottom: 0.8em;
 }
 
 /********************************* PSEUDO SELECTORS *********************************/
@@ -311,7 +322,7 @@ nav ul a:hover {
     background-color: #161616;
   }
 
-  h1, h1 a, h2, h3, h4, p, a {
+  h1, h1 a, h2, h3, h4, h5, p, a {
     color: #cecece;
   }
 
