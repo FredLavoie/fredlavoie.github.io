@@ -196,6 +196,27 @@ p, #project-content ul li {
   padding-bottom: 0.8em;
 }
 
+.blog-link {
+  color: #4a148c;
+  text-decoration: none;
+}
+
+.code-block {
+  font-family: Menlo, monospace;
+  background-color: #f4edf5;
+  text-align: left;
+  padding: 0.2em;
+  border-radius: 2px;
+  width: auto;
+  font-size: 0.9em;
+}
+
+.inline-code {
+  font-family: Menlo, monospace;
+  background-color: #f4edf5;
+  font-size: 0.9em;
+}
+
 /********************************* PSEUDO SELECTORS *********************************/
 
 nav ul a:hover {
@@ -337,6 +358,14 @@ nav ul a:hover {
     color: #cecece;
   }
 
+  .blog-link {
+    color: #ba68c8;
+  }
+
+  .blog-link:hover {
+    text-decoration: underline;
+  }
+
   .blog-post a {
     color: #cecece;
   }
@@ -352,6 +381,14 @@ nav ul a:hover {
   .links a {
     background-color: #9c27b0;
     color: #cecece;
+  }
+
+  .code-block {
+    background-color: #414040;
+  }
+
+  .inline-code {
+    background-color: #414040;
   }
 
   nav ul a:hover {
