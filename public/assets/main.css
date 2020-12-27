@@ -76,11 +76,10 @@ p, #project-content ul li {
   color: #404040;
 }
 
-#goals-content ul li {
+#goals-content ul li, #goals-content ul span {
   font-size: 1.0em;
   line-height: 1.2em;
   margin-bottom: 0.5em;
-  /* color: #404040; */
 }
 
 #nav-header {
@@ -182,10 +181,6 @@ p, #project-content ul li {
   width: 2.2em;
 }
 
-.indented {
-  text-indent: 1.1em;
-}
-
 .blog-post {
   padding-bottom: 0.8em;
 }
@@ -215,6 +210,15 @@ p, #project-content ul li {
   font-family: Menlo, monospace;
   background-color: #f4edf5;
   font-size: 0.9em;
+}
+
+.goal-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.checkmark {
+  width: 0.8em;
 }
 
 /********************************* PSEUDO SELECTORS *********************************/
@@ -348,6 +352,10 @@ nav ul a:hover {
   }
 
   ul li {
+    color: #cecece;
+  }
+
+  ul span {
     color: #cecece;
   }
 
