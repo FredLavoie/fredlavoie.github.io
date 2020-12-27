@@ -8,7 +8,7 @@
 
 a {
   color: #4a148c;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .code-block {
@@ -39,7 +39,7 @@ a {
   }
 
   .code-block {
-    background-color: #414040;  
+    background-color: #414040;
   }
 
   .inline-code {
