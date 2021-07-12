@@ -13,7 +13,7 @@ main {
   height: 100%;
  }
 
-h1 a { 
+h1 { 
   color: #404040;
   font-size: 3em;
   text-decoration: none; 
@@ -336,89 +336,3 @@ nav ul a:hover {
   }
 }
 
-/* DARK THEME CSS */
-@media (prefers-color-scheme: dark) {
-  
-  html {
-    background-color: #202020;
-  }
-
-  #nav-header {
-    background-color: #161616;
-  }
-
-  h1, h1 a, h2, h3, h4, h5, p, a {
-    color: #cecece;
-  }
-
-  ul li {
-    color: #cecece;
-  }
-
-  ul span {
-    color: #cecece;
-  }
-
-  #nav-links {
-    background-color: #414040;
-  }
-  #nav-links a {
-    color: #cecece;
-  }
-
-  .blog-link {
-    color: #ba68c8;
-  }
-
-  .blog-link:hover {
-    text-decoration: underline;
-  }
-
-  .blog-post a {
-    color: #cecece;
-  }
-
-  em {
-    color: #ba68c8;
-  }
-
-  .project-li {
-    border: 0.12em solid #9c27b0;
-  }
-
-  .links a {
-    background-color: #9c27b0;
-    color: #cecece;
-  }
-
-  .code-block {
-    background-color: #414040;
-  }
-
-  .inline-code {
-    background-color: #414040;
-  }
-
-  nav ul a:hover {
-    background-color: #9c27b0;
-    color: #cecece;
-  }
-  
-  ::selection {
-    background-color: #9c27b0;
-    color: #cecece;
-  }
-
-  .selected {
-    background-color: #9c27b0;
-    color: #cecece;
-  }
-
-  #invert-svg-color-1 {
-    filter: invert(0.665) sepia(1) saturate(0) hue-rotate(97deg);
-  }
-
-  #invert-svg-color-2 {
-    filter: invert(0.336) sepia(1) saturate(0) hue-rotate(97deg);
-  }
-}
