@@ -1,0 +1,260 @@
+/*************************************************************************************
+  CSS STYLING
+**************************************************************************************/
+body {
+    font-family: -apple-system, Helvetica, arial, sans-serif;
+    background-color: #222428;
+}
+
+main {
+    text-align: left;
+    padding: 5em 1em 1em 1em;
+    margin: 0em auto;
+}
+
+h1 {
+    color: #f4f5f8;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #f4f5f8;
+    font-size: 1.6em;
+    margin-bottom: 0.2em;
+    margin-top: 1.8em;
+}
+
+h3 {
+    color: #f4f5f8;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    margin-top: 1.8em;
+}
+
+/*********************************** ID SELECTORS ***********************************/
+p,
+#project-content ul li {
+    text-align: justify;
+    font-size: 1.3em;
+    line-height: 1.4em;
+    margin-bottom: 1em;
+    color: #f4f5f8;
+}
+
+#home-link {
+    padding: 0.1em 0em;
+    text-decoration: none;
+}
+
+#date-stamp {
+    margin-top: 1em;
+}
+
+#flex-project-items {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/********************************** CLASS SELECTORS *********************************/
+.transition-fade {
+    transition: 100ms;
+    opacity: 1;
+}
+
+html.is-animating .transition-fade {
+    opacity: 0;
+}
+
+.project-li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 20em;
+    border: 0.12em solid #6002ee;
+    padding: 0.5em 0.5em;
+    margin: 0.5em 0.1em;
+}
+
+.header-container {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #383a3e;
+}
+
+.header-inner-container {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-nav {
+    margin: auto 0.6em auto 1em;
+}
+
+.right-nav {
+    margin: auto 0.6em auto 1em;
+}
+
+.project-img {
+    height: 10em;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.project-li h4 {
+    text-align: center;
+}
+
+.links {
+    margin: 0.2em;
+}
+
+.links a {
+    text-decoration: none;
+    background-color: #6002ee;
+    color: white;
+    padding: 0.4em 0.6em;
+}
+
+.preview-icon {
+    position: relative;
+    top: 0.35em;
+    height: 1.4em;
+    width: 1.4em;
+    padding-right: 0.3em;
+}
+
+.github-icon {
+    position: relative;
+    top: 0.2em;
+    height: 1.2em;
+    width: 1.2em;
+    padding-right: 0.3em;
+}
+
+.nav-icon {
+    height: 1.5em;
+    width: 1.5em;
+    margin: 0.4em 0.3em 0 0.3em;
+}
+
+/********************************* PSEUDO SELECTORS *********************************/
+
+.nav-link:hover {
+    background-color: #6002ee;
+    color: #f4edf5;
+}
+
+::selection {
+    background-color: #6002ee;
+    color: #f4edf5;
+}
+
+/*************************************************************************************
+  MEDIA QUERIES
+**************************************************************************************/
+
+/* DESKTOP SPECIFIC CSS */
+@media (min-width: 820px) {
+    main {
+        max-width: 800px;
+    }
+
+    header a {
+        text-decoration: none;
+    }
+
+    .nav-link {
+        font-size: 1.3em;
+        color: #f4f5f8;
+        display: inline-block;
+        text-decoration: none;
+        padding: 0.4em 0.4em 0.35em 0.4em;
+        border-radius: 4px;
+    }
+
+    nav ul {
+        font-size: 1.2em;
+        word-spacing: 0.25em;
+    }
+
+    nav ul a {
+        padding: 0.2em 0.2em;
+    }
+
+    nav ul a:hover {
+        padding: 0em 0.2em;
+    }
+
+    .project-li {
+        width: 15em;
+    }
+
+    .selected {
+        background-color: #6002ee;
+        color: #f4edf5;
+    }
+
+    #mobile-menu {
+        display: none;
+    }
+}
+
+/* TABLET SPECIFIC CSS */
+@media (max-width: 821px) and (min-width: 750px) {
+    .project-li {
+        width: 21em;
+    }
+}
+
+/* MOBILE SPECIFIC CSS */
+@media (max-width: 821px) {
+    body,
+    main {
+        width: auto;
+    }
+
+    h1 a {
+        font-size: 2.2em;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        font-size: 1em;
+    }
+
+    nav ul a {
+        text-align: center;
+        padding: 0.5em;
+        margin: 0.1em;
+    }
+
+    .selected {
+        background-color: #6002ee;
+        color: #f4edf5;
+        padding: 0.5em;
+    }
+
+    .project-li {
+        width: 21em;
+    }
+
+    #desktop-menu {
+        display: none;
+    }
+    #menu {
+        display: block;
+    }
+}
