@@ -1,0 +1,211 @@
+/*************************************************************************************
+  CSS STYLING
+**************************************************************************************/
+body {
+    font-family: -apple-system, Helvetica, arial, sans-serif;
+    background-color: #222428;
+}
+
+main {
+    text-align: left;
+    padding: 5em 1em 1em 1em;
+    margin: 0em auto;
+}
+
+h1 {
+    color: #f4f5f8;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #f4f5f8;
+    font-size: 1.6em;
+    margin-top: 1.8em;
+    margin-bottom: 0.4em;
+}
+
+h3 {
+    color: #f4f5f8;
+    font-size: 1.4em;
+    margin-top: 1.8em;
+    margin-bottom: 0.4em;
+}
+
+p,
+li {
+    /* text-align: justify; */
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin-bottom: 1.2em;
+    color: #f4f5f8;
+}
+
+header a {
+    text-decoration: none;
+}
+
+/********************************** CLASS SELECTORS *********************************/
+.transition-fade {
+    transition: 100ms;
+    opacity: 1;
+}
+
+html.is-animating .transition-fade {
+    opacity: 0;
+}
+
+.header-container {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #383a3e;
+}
+
+.header-inner-container {
+    width: 800px;
+    height: 48px;
+    display: flex;
+}
+
+.left-nav {
+    flex-grow: 0;
+    margin: auto 0.6em;
+}
+
+.title-container {
+    /* site title takes up the rest of the space to
+    be centered with the text below  */
+    flex-grow: 1;
+    padding-left: 0.5em;
+}
+
+.right-nav {
+    flex-grow: 0;
+    margin: auto 0.6em;
+}
+
+.project-img {
+    height: 10em;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.github-icon {
+    position: relative;
+    top: 0.2em;
+    height: 1.2em;
+    width: 1.2em;
+    padding-right: 0.3em;
+}
+
+.nav-icon {
+    height: 1.5em;
+    width: 1.5em;
+    margin: 0.4em 0.3em 0 0.3em;
+}
+
+.date-stamp {
+    margin-top: 1em;
+}
+
+.nav-link {
+    font-size: 1.3em;
+    color: #1fff9e;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.4em 0.4em 0.35em 0.4em;
+    border-radius: 4px;
+    transition: 500ms;
+}
+
+.selected {
+    background-color: #1fff9e;
+    color: #383a3e;
+}
+
+/********************************* PSEUDO SELECTORS *********************************/
+.nav-link:hover {
+    background-color: #1fff9e;
+    color: #383a3e;
+}
+
+::selection {
+    background-color: #1fff9e;
+    color: #383a3e;
+}
+
+/*************************************************************************************
+  MEDIA QUERIES
+**************************************************************************************/
+
+/* DESKTOP SPECIFIC CSS */
+@media (min-width: 671px) {
+    main {
+        max-width: 800px;
+    }
+
+    .site-title {
+        text-decoration: none;
+    }
+}
+
+/* MOBILE SPECIFIC CSS */
+@media (max-width: 670px) and (min-width: 401px) {
+    body,
+    main {
+        width: auto;
+    }
+
+    .header-inner-container {
+        justify-content: space-between;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .site-title {
+        display: none;
+    }
+}
+
+/* SMALL MOBILE SPECIFIC CSS */
+@media (max-width: 400px) and (min-width: 356px) {
+    body,
+    main {
+        width: auto;
+    }
+
+    .header-inner-container {
+        justify-content: space-between;
+    }
+
+    .site-title {
+        display: none;
+    }
+}
+
+/* REDICULOUSLY SMALL MOBILE SPECIFIC CSS */
+@media (max-width: 355px) {
+    body,
+    main {
+        width: auto;
+    }
+
+    .header-inner-container {
+        justify-content: space-between;
+    }
+
+    .site-title {
+        display: none;
+    }
+
+    .right-nav {
+        display: none;
+    }
+}
