@@ -20,41 +20,28 @@ h1 {
 h2 {
     color: #f4f5f8;
     font-size: 1.6em;
-    margin-bottom: 0.2em;
     margin-top: 1.8em;
+    margin-bottom: 0.4em;
 }
 
 h3 {
     color: #f4f5f8;
-    font-size: 1.2em;
-    margin-bottom: 1em;
+    font-size: 1.4em;
     margin-top: 1.8em;
+    margin-bottom: 0.4em;
 }
 
-/*********************************** ID SELECTORS ***********************************/
 p,
-#project-content ul li {
-    text-align: justify;
+li {
+    /* text-align: justify; */
     font-size: 1.2em;
     line-height: 1.4em;
-    margin-bottom: 1em;
+    margin-bottom: 1.2em;
     color: #f4f5f8;
 }
 
-#home-link {
-    padding: 0.1em 0em;
+header a {
     text-decoration: none;
-}
-
-#date-stamp {
-    margin-top: 1em;
-}
-
-#flex-project-items {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
 }
 
 /********************************** CLASS SELECTORS *********************************/
@@ -65,17 +52,6 @@ p,
 
 html.is-animating .transition-fade {
     opacity: 0;
-}
-
-.project-li {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 20em;
-    border: 0.12em solid #6002ee;
-    padding: 0.5em 0.5em;
-    margin: 0.5em 0.1em;
 }
 
 .header-container {
@@ -90,18 +66,25 @@ html.is-animating .transition-fade {
 
 .header-inner-container {
     width: 800px;
-    height: auto;
+    height: 48px;
     display: flex;
-    justify-content: center;
-    padding-right: 4em;
 }
 
 .left-nav {
-    margin: auto 0.6em auto 1em;
+    flex-grow: 0;
+    margin: auto 0.6em;
+}
+
+.title-container {
+    /* site title takes up the rest of the space to
+    be centered with the text below  */
+    flex-grow: 1;
+    padding-left: 0.5em;
 }
 
 .right-nav {
-    margin: auto 0.6em auto 1em;
+    flex-grow: 0;
+    margin: auto 0.6em;
 }
 
 .project-img {
@@ -112,29 +95,6 @@ html.is-animating .transition-fade {
     display: flex;
     justify-content: center;
     align-items: baseline;
-}
-
-.project-li h4 {
-    text-align: center;
-}
-
-.links {
-    margin: 0.2em;
-}
-
-.links a {
-    text-decoration: none;
-    background-color: #6002ee;
-    color: white;
-    padding: 0.4em 0.6em;
-}
-
-.preview-icon {
-    position: relative;
-    top: 0.35em;
-    height: 1.4em;
-    width: 1.4em;
-    padding-right: 0.3em;
 }
 
 .github-icon {
@@ -151,16 +111,34 @@ html.is-animating .transition-fade {
     margin: 0.4em 0.3em 0 0.3em;
 }
 
-/********************************* PSEUDO SELECTORS *********************************/
+.date-stamp {
+    margin-top: 1em;
+}
 
+.nav-link {
+    font-size: 1.3em;
+    color: #1fff9e;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.4em 0.4em 0.35em 0.4em;
+    border-radius: 4px;
+    transition: 500ms;
+}
+
+.selected {
+    background-color: #1fff9e;
+    color: #383a3e;
+}
+
+/********************************* PSEUDO SELECTORS *********************************/
 .nav-link:hover {
     background-color: #1fff9e;
     color: #383a3e;
 }
 
 ::selection {
-    background-color: #6002ee;
-    color: #f4edf5;
+    background-color: #1fff9e;
+    color: #383a3e;
 }
 
 /*************************************************************************************
@@ -168,84 +146,66 @@ html.is-animating .transition-fade {
 **************************************************************************************/
 
 /* DESKTOP SPECIFIC CSS */
-@media (min-width: 820px) {
+@media (min-width: 671px) {
     main {
         max-width: 800px;
     }
 
-    header a {
+    .site-title {
         text-decoration: none;
-    }
-
-    .nav-link {
-        font-size: 1.3em;
-        color: #1fff9e;
-        display: inline-block;
-        text-decoration: none;
-        padding: 0.4em 0.4em 0.35em 0.4em;
-        border-radius: 4px;
-        transition: 500ms;
-    }
-
-    nav ul {
-        font-size: 1.2em;
-        word-spacing: 0.25em;
-    }
-
-    nav ul a {
-        padding: 0.2em 0.2em;
-    }
-
-    nav ul a:hover {
-        padding: 0em 0.2em;
-    }
-
-    .project-li {
-        width: 15em;
-    }
-
-    .selected {
-        background-color: #1fff9e;
-        color: #383a3e;
-    }
-}
-
-/* TABLET SPECIFIC CSS */
-@media (max-width: 821px) and (min-width: 750px) {
-    .project-li {
-        width: 21em;
     }
 }
 
 /* MOBILE SPECIFIC CSS */
-@media (max-width: 821px) {
+@media (max-width: 670px) and (min-width: 401px) {
     body,
     main {
         width: auto;
     }
 
-    h1 a {
-        font-size: 2.2em;
+    .header-inner-container {
+        justify-content: space-between;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        font-size: 1em;
+    .site-title {
+        display: none;
+    }
+}
+
+/* SMALL MOBILE SPECIFIC CSS */
+@media (max-width: 400px) and (min-width: 356px) {
+    body,
+    main {
+        width: auto;
     }
 
-    nav ul a {
-        text-align: center;
-        padding: 0.5em;
-        margin: 0.1em;
+    .header-inner-container {
+        justify-content: space-between;
     }
 
-    .selected {
-        background-color: #1fff9e;
-        color: #383a3e;
+    .site-title {
+        display: none;
+    }
+}
+
+/* REDICULOUSLY SMALL MOBILE SPECIFIC CSS */
+@media (max-width: 355px) {
+    body,
+    main {
+        width: auto;
     }
 
-    .project-li {
-        width: 21em;
+    .header-inner-container {
+        justify-content: space-between;
+    }
+
+    .site-title {
+        display: none;
+    }
+
+    .right-nav {
+        display: none;
     }
 }
