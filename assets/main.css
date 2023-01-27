@@ -8,7 +8,7 @@ body {
 
 main {
     text-align: left;
-    padding: 5em 1em 1em 1em;
+    padding: 3em 1em 1em 1em;
     margin: 0em auto;
 }
 
@@ -33,14 +33,13 @@ h3 {
 
 p,
 li {
-    /* text-align: justify; */
     font-size: 1.2em;
     line-height: 1.4em;
     margin-bottom: 1.2em;
     color: #f4f5f8;
 }
 
-header a {
+a {
     text-decoration: none;
 }
 
@@ -88,13 +87,21 @@ html.is-animating .transition-fade {
 }
 
 .project-img {
-    height: 10em;
+    width: 15em;
+    height: 100%;
+    float: left;
+    margin-right: 0.8em;
 }
 
-.flex-container {
+.divider {
+    border-bottom: 2px solid #383a3e;
+}
+
+.source-link-container {
     display: flex;
     justify-content: center;
     align-items: baseline;
+    margin-bottom: 0.2em;
 }
 
 .github-icon {
@@ -111,6 +118,12 @@ html.is-animating .transition-fade {
     margin: 0.4em 0.3em 0 0.3em;
 }
 
+.source-link-container a {
+    font-size: 1em;
+    line-height: 1.2em;
+    text-decoration: none;
+}
+
 .date-stamp {
     margin-top: 1em;
 }
@@ -119,10 +132,31 @@ html.is-animating .transition-fade {
     font-size: 1.3em;
     color: #1fff9e;
     display: inline-block;
-    text-decoration: none;
-    padding: 0.4em 0.4em 0.35em 0.4em;
+    padding: 0.2em 0.4em;
     border-radius: 4px;
     transition: 500ms;
+}
+
+.project-link {
+    color: #fe5591;
+    padding: 0.3em 0.6em;
+    border-radius: 4px;
+    transition: 500ms;
+    user-select: none;
+}
+
+.project-title-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.project-title-row h3 {
+    margin-left: 0.4em;
+}
+
+.github-icon {
+    width: 1.3em;
 }
 
 .selected {
@@ -134,6 +168,16 @@ html.is-animating .transition-fade {
 .nav-link:hover {
     background-color: #1fff9e;
     color: #383a3e;
+}
+
+.project-link:hover {
+    background-color: #fe5591;
+    color: #222428;
+}
+
+.project-link img:hover {
+    stroke: #222428;
+    fill: #222428;
 }
 
 ::selection {
