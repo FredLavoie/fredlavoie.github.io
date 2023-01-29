@@ -65,25 +65,39 @@
                             </a>
                         </div>
                     </div>
-                    <div>
+                    <div class="project-pic-desc">
                         <img
                             alt="workout tracker screenshot"
                             class="project-img"
                             src="./assets/docs/workout_tracker2.png"
                         />
                         <p>
-                            TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING
-                            TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING
-                            TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING
-                            TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING
-                            TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING
+                            A full-stack application for tracking workouts and personal records. The architecture is a
+                            React frontend that talks to a Django REST API with a PostgreSQL database.
                         </p>
                         <p>
-                            TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING
-                            TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING
-                            TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING
-                            TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING
-                            TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING
+                            The motivation for creating this application was two fold: most apps on the market do more
+                            things than I cared to have in an app, which simply added clutter, and I wanted to
+                            demonstrate that I could build a full stack application with this particular stack in order
+                            to land a job using the stack (spoiler, it worked!).
+                        </p>
+                        <p>
+                            I learned a tremendous amount of skills building this app, which is still being developed
+                            regularly, so the lessons keep coming. The original MVP had no testing, and was built using
+                            vanilla javascript. Over time, I upgraded the app to Typescript by converting all JS/JSX
+                            files to TS/TSX. I also added a ton of tests; unit tests for pure functions and integration
+                            tests for React components. These integration tests included mocking of http requests.
+                        </p>
+                        <p>
+                            Other things I have done: migrated from Material UI v4 to v5, migrated the toolchain from
+                            Create-React-App to Vite, added CI/CD with Github Actions, added python unit tests and I
+                            deployed the application to a VPS hosted on DigitalOcean.
+                        </p>
+                        <p>
+                            Since April of 2021 when I completed the MVP, I have been using this application on a daily
+                            basis along with my partner and my father. It's a real joy to have this useful application
+                            helping others around me and having "real" users to give me feedback on UX and UI issues,
+                            and to report bugs.
                         </p>
                     </div>
                 </section>
@@ -118,7 +132,7 @@
                             </a>
                         </div>
                     </div>
-                    <div>
+                    <div class="project-pic-desc">
                         <img
                             alt="structural analysis screenshot"
                             class="project-img"
@@ -129,11 +143,19 @@
                             frontend libraries used!
                         </p>
                         <p>
-                            TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING
-                            TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING
-                            TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING
-                            TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING
-                            TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING
+                            This application was bourn out of a desire to build a visual input and output experience to
+                            a software that was built in my university days in FORTRAN. The original program read from a
+                            text input file, and outputted the results in a text file. I wanted to put my web
+                            development knowledge to use by create a dynamic form input where the structure is displayed
+                            visually in real time as the user inputs the information.
+                        </p>
+                        <p>
+                            When the form is submitted, the Node JS server takes the form data and create an input
+                            string that is formatted in the specific way that the FORTRAN software expects, and then the
+                            server executes the FORTRAN program. Instead of outputting a text file with the results
+                            data, the program outputs the results in a JSON file, which the server then returns to the
+                            client. The client then takes the results data and outputs a number of visual graphs to
+                            display the results.
                         </p>
                     </div>
                 </section>
