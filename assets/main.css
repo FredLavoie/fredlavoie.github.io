@@ -18,14 +18,16 @@ h1 {
 }
 
 h2 {
-    color: #f4f5f8;
+    color: #1fff9e;
+    /* color: #f4f5f8; */
     font-size: 1.6em;
     margin-top: 1.8em;
     margin-bottom: 0.4em;
 }
 
 h3 {
-    color: #f4f5f8;
+    color: #1fff9e;
+    /* color: #f4f5f8; */
     font-size: 1.4em;
     margin-top: 1.8em;
     margin-bottom: 0.4em;
@@ -87,7 +89,7 @@ html.is-animating .transition-fade {
 }
 
 .project-img {
-    width: 15em;
+    width: 20em;
     height: 100%;
     float: left;
     margin-right: 0.8em;
@@ -125,6 +127,7 @@ html.is-animating .transition-fade {
 }
 
 .date-stamp {
+    color: #fe5591;
     margin-top: 1em;
 }
 
