@@ -219,6 +219,11 @@ html.is-animating .transition-fade {
     .site-title {
         display: none;
     }
+
+    .project-pic-desc {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* SMALL MOBILE SPECIFIC CSS */
@@ -234,6 +239,11 @@ html.is-animating .transition-fade {
 
     .site-title {
         display: none;
+    }
+
+    .project-pic-desc {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -254,5 +264,10 @@ html.is-animating .transition-fade {
 
     .right-nav {
         display: none;
+    }
+
+    .project-pic-desc {
+        display: flex;
+        flex-direction: column;
     }
 }
