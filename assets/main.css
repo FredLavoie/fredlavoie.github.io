@@ -167,6 +167,11 @@ html.is-animating .transition-fade {
     color: #383a3e;
 }
 
+.text-link-tag {
+    text-decoration: underline;
+    color: #fe5591;
+}
+
 /********************************* PSEUDO SELECTORS *********************************/
 .nav-link:hover {
     background-color: #1fff9e;
